@@ -187,11 +187,7 @@ def get_feed(page_id, pages=10):
 
 
 def remove_duplicates(data):
-    try:
-        uniq_data = json.load(open('docs/feed.json', 'r'))
-    except FileNotFoundError:
-        uniq_data = []
-
+    uniq_data = []
     for item in data:
         if item not in uniq_data:
             uniq_data.append(item)
@@ -232,7 +228,8 @@ if __name__ == "__main__":
     news_pages = [('The Scholar\'s Avenue', 'scholarsavenue'),
                   ('Awaaz IIT Kharagpur', 'awaaziitkgp'),
                   ('Technology Students Gymkhana', 'TSG.IITKharagpur'),
-                  ('Technology IIT KGP', 'iitkgp.tech')]
+                  ('Technology IIT KGP', 'iitkgp.tech'),
+                  ('Metakgp', 'metakgp')]
     for_later = ['Cultural-IIT-Kharagpur']
 
     data = get_aggregated_feed(news_pages)
