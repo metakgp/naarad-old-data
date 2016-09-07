@@ -200,8 +200,8 @@ def prettify_date(data):
         date = parse(item['created_time'])
         tzlocal = tz.gettz('Asia/Kolkata')
         local_date = date.astimezone(tzlocal)
-        item['local_date'] = local_date.strftime('%d-%m-%Y')
-        item['local_time'] = local_date.strftime('%I:%M%p')
+        item['real_date'] = local_date.strftime('%d-%m-%Y')
+        item['real_time'] = local_date.strftime('%I:%M%p')
     return data
 
 
