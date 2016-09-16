@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source activate Naarad_VirtualENV
 python3 fbscraper.py
 #python3 frontend.py
 
