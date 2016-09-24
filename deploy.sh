@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/home/naarad/.conda/envs/Naarad_VirtualENV/bin/python3
 python3 fbscraper.py
 #python3 frontend.py
 
