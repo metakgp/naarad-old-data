@@ -1,4 +1,6 @@
 #!/bin/bash
+git remote update
+git rebase origin/master
 python3 fbscraper.py
 #python3 frontend.py
 
