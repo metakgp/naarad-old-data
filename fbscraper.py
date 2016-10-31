@@ -111,8 +111,11 @@ def get_shared_post(post_id):
 
 def get_video(post_id) :
     video_id = post_id.split('_')[1]
-    base_url = video_id + "?fields=embeddable" 
-    embed_flag = graph.get(base_url)['embeddable'] 
+    base_url = video_id + "?fields=embeddable"
+    try : 
+        embed_flag = graph.get(base_url)['embeddable'] 
+    except facepy.exceptions.OAuthError:
+        return ""
     if embed_flag : #checking if the video is embedddable 
         embed_html_url=video_id + '?fields=from,source'
         query = graph.get(embed_html_url)
