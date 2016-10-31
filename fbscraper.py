@@ -197,7 +197,8 @@ def get_feed(page_id, pages=10):
                 if "message" not in post_dict.keys():
                     post_dict['message'] = get_video(post_dict['id'])
 
-
+            except facepy.exceptions.OAuthError :
+		pass
     data.extend(old_data)
     data.sort(key=lambda x: parse(x['created_time']), reverse=True)
 
