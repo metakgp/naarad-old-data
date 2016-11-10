@@ -114,8 +114,11 @@ def get_shared_post(post_id):
 
 def get_video(post_id) :
     video_id = post_id.split('_')[1]
-    base_url = video_id + "?fields=embeddable" 
-    embed_flag = graph.get(base_url)['embeddable'] 
+    base_url = video_id + "?fields=embeddable"
+    try : 
+        embed_flag = graph.get(base_url)['embeddable'] 
+    except facepy.exceptions.OAuthError:
+        return ""
     if embed_flag : #checking if the video is embedddable 
         embed_html_url=video_id + '?fields=from,source'
         query = graph.get(embed_html_url)
@@ -188,7 +191,7 @@ def get_feed(page_id, pages=10):
         for post_dict in data:
             post_dict['pic'] = get_picture(post_dict['id'], dir='docs')
             post_dict['link'] = get_link(post_dict['id'])
-            try :  #Events and shared post have story key
+            if "story" in post_dict :  #Events and shared post have story key
                 if "event" in post_dict['story'] :
                     post_dict['message'] = get_event(post_dict['id'], page_id)
                     post_dict['pic'] = get_event_picture(post_dict['id'],dir='docs')
@@ -196,11 +199,11 @@ def get_feed(page_id, pages=10):
                     post_dict['message'] = '<b>' + post_dict['story'] + '</b>' + '\n\n' + get_shared_post(post_dict['id']) 
 
               #  print (post_dict['message'])
-            except KeyError :
-                if "message" not in post_dict.keys():
+            else :
+                if not "message" in post_dict :
                     post_dict['message'] = get_video(post_dict['id'])
 
-
+            
     data.extend(old_data)
     data.sort(key=lambda x: parse(x['created_time']), reverse=True)
 
