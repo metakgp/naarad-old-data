@@ -3,6 +3,9 @@ Naarad
 
 Naarad aggregates all your KGP related news from facebook pages to one place.
 
+Maintainers : [Athitya Kumar](https://github.com/athityakumar) and [Ayush Goyal](https://github.com/DefCon-007).
+
+
 ## How does it work?
 
 Naarad gets the content from the specified pages using Facebook's graph API. We
