@@ -51,8 +51,9 @@ def enable_links(message):
 def get_html(data):
     template_raw = open('feed.tmpl', 'r').read()
 
-    for post in data:
+    for post in data:  
         if 'message' in post:
+          if (type(post['message']) is str):
             post['message'] = fixnewlines(post['message'])
             if 'flag' not in post :
                 post['message'] = enable_links(post['message'])
