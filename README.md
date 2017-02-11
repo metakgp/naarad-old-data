@@ -1,7 +1,7 @@
 Naarad
 ======
 
-Naarad aggregates all your KGP related news from facebook pages to one place.
+Naarad aggregates all your KGP related news from facebook pages to one place. This repository is mainly push updates to github pages, [naarad-source](https://github.com/metakgp/naarad-source) is the main development repository.
 
 Maintainers : [Athitya Kumar](https://github.com/athityakumar) and [Ayush Goyal](https://github.com/DefCon-007).
 
