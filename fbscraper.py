@@ -260,7 +260,7 @@ if __name__ == "__main__":
 				  ('Awaaz IIT Kharagpur', 'awaaziitkgp'),
 				  ('Technology Students Gymkhana', 'TSG.IITKharagpur'),
 				  ('Technology IIT KGP', 'iitkgp.tech'),
-				  ('Metakgp', 'metakgp'),('Kharagpur Open Source Society','kossiitkgp')]
+				  ('Metakgp', 'metakgp')]
 	for_later = ['Cultural-IIT-Kharagpur']
 
 	data = get_aggregated_feed(news_pages)
