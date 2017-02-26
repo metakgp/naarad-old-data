@@ -259,7 +259,7 @@ if __name__ == "__main__":
 	news_pages = [('The Scholar\'s Avenue', 'scholarsavenue'),
 				  ('Awaaz IIT Kharagpur', 'awaaziitkgp'),
 				  ('Technology Students Gymkhana', 'TSG.IITKharagpur'),
-				  ('Technology IIT KGP', 'iitkgp.tech'),
+				  ('Technology IIT KGP', 'iitkgp.tech'),('Kharagpur Open Source Society','kossiitkgp'),
 				  ('Metakgp', 'metakgp')]
 	for_later = ['Cultural-IIT-Kharagpur']
 
