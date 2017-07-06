@@ -1,4 +1,4 @@
-cffi==1.8.2
+#cffi==1.8.2
 commonregex==1.5.4
 cryptography==1.5
 Django==1.9.1
