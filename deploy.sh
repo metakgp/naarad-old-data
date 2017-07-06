@@ -1,9 +1,10 @@
 #!/bin/bash
 git remote update
 git rebase origin/master
-python3 fbscraper.py
+source /home/pi/naarad_venv/bin/activate
+python fbscraper.py
 #python3 frontend.py
-
+deactivate
 # Commit changes
 echo "commiting.."
 git add -A

@@ -61,5 +61,5 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
-deploy.sh
+./deploy.sh
 ACCESS_TOKEN
