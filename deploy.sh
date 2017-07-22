@@ -1,4 +1,5 @@
 #!/bin/bash
+source /home/pi/.bashrc
 git remote update
 git rebase origin/master
 source /home/pi/naarad_venv/bin/activate
