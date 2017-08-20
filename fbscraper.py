@@ -4,6 +4,8 @@ import re
 import json
 from dateutil.parser import parse, tz
 import urllib.request
+import os
+from random import random
 
 import facepy
 from facepy import GraphAPI
@@ -14,9 +16,10 @@ from frontend import write_html
 # To get an access token follow this SO answer:
 # http://stackoverflow.com/a/16054555/1780891
 
-with open('./ACCESS_TOKEN', 'r') as f:
-	access_token = f.readline().rstrip('\n')
+# with open('./ACCESS_TOKEN', 'r') as f:
+# 	access_token = f.readline().rstrip('\n')
 
+access_token=str(os.environ['ACCESS_TOKEN'])
 graph = GraphAPI(access_token)
 
 
@@ -269,3 +272,5 @@ if __name__ == "__main__":
 
 	json.dump(data, open('docs/feed.json', 'w'))
 	write_html(data, 'docs/index.html')
+	f=open("hist.txt","w")
+	f.write(str(random()))

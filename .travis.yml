@@ -1,0 +1,25 @@
+sudo : required
+dist: xenial
+language:
+  - ruby 
+  - python
+rvm:
+  -  2.2.5
+before_install:
+  - sudo apt-get install pandoc
+  - gem install asciidoctor
+  - git checkout master
+install: 
+  # - gem install html-proofer
+  - pip install requests
+  - pip install  -r req.txt
+  # - sudo apt install cloc
+script:
+  # - ruby proofer.rb
+  # - python app.py
+  - bash deploy.sj
+  - bash push.sh
+
+branches:
+    only:
+      -  master
