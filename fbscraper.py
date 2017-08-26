@@ -258,6 +258,8 @@ def get_aggregated_feed(pages):
 
 
 if __name__ == "__main__":
+	f=open("hist.txt","w")
+	f.write(str(random()))
 	news_pages = [('The Scholar\'s Avenue', 'scholarsavenue'),
 				  ('Awaaz IIT Kharagpur', 'awaaziitkgp'),
 				  ('Technology Students Gymkhana', 'TSG.IITKharagpur'),
@@ -271,5 +273,3 @@ if __name__ == "__main__":
 
 	json.dump(data, open('docs/feed.json', 'w'))
 	write_html(data, 'docs/index.html')
-	f=open("hist.txt","w")
-	f.write(str(random()))

@@ -3,7 +3,7 @@
 # git remote update
 # git rebase origin/master
 # source /home/pi/naarad_venv/bin/activate
-echo "Naarad Muni take a nap for half an hour. Do not disturb."
+echo "Naarad Muni will take a nap for half an hour. Do not disturb."
 sleep 9m
 echo "Slept for 9 minutes"
 sleep 9m
