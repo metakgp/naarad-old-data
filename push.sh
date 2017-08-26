@@ -6,8 +6,8 @@ setup_git() {
 }
 
 commit_website_files() {
-  git checkout -b master
-  git add index.html
+  # git checkout master
+  git add docs/
   git commit --message "Update and Build"
 }
 

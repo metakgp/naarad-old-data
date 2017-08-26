@@ -8,16 +8,16 @@ rvm:
 before_install:
   - sudo apt-get install pandoc
   - gem install asciidoctor
-  - git checkout master
 install: 
   # - gem install html-proofer
-  - pip install requests
-  - pip install  -r req.txt
+  - pip3 install requests
+  - pip3 install  -r req.txt
   # - sudo apt install cloc
 script:
   # - ruby proofer.rb
   # - python app.py
-  - bash deploy.sj
+  - git checkout master
+  - bash deploy.sh
   - bash push.sh
 
 branches:
