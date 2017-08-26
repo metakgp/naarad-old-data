@@ -7,7 +7,7 @@ setup_git() {
 
 commit_website_files() {
   # git checkout master
-  git add docs/
+  git add docs/ hist.txt
   git commit --message "Update and Build"
 }
 
