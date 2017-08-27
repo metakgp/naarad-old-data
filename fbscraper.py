@@ -6,6 +6,9 @@ from dateutil.parser import parse, tz
 import urllib.request
 import os
 from random import random
+import time
+from datetime import datetime, timezone
+import pytz
 
 import facepy
 from facepy import GraphAPI
@@ -273,3 +276,12 @@ if __name__ == "__main__":
 
 	json.dump(data, open('docs/feed.json', 'w'))
 	write_html(data, 'docs/index.html')
+	tz = pytz.timezone('Asia/Kolkata')
+	now =  datetime.now(tz)
+	text = "Last updated: "+str(now.day)+"-"+str(now.month)+"-"+str(now.year)+", "+str(now.hour)+":"+str(now.minute)+" IST"
+	fn=open("docs/index.html","r")
+	fo=open("docs/indext.html","w")
+	all_text = fn.read()
+	all_text = all_text.replace(' <!-- Time stamp here -->',text)
+	fo.write(all_text)
+	os.system("mv docs/indext.html docs/index.html")
