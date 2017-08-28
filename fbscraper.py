@@ -267,7 +267,10 @@ if __name__ == "__main__":
 				  ('Awaaz IIT Kharagpur', 'awaaziitkgp'),
 				  ('Technology Students Gymkhana', 'TSG.IITKharagpur'),
 				  ('Technology IIT KGP', 'iitkgp.tech'),('Kharagpur Open Source Society','kossiitkgp'),
-				  ('Metakgp', 'metakgp')]
+				  ('Metakgp', 'metakgp'),('Kharagpur RoboSoccer Students\' Group','krssg'),
+				  ('Technology Robotix Society','robotixiitkgp'),('Swarm Robotics','swarmroboticskgp'),
+				  ('Kharagpur Data Analytics Group','kgpdag'), ('Autonomous Ground Vehicle','agvkgp'),
+				  ('Quadrotor','aerialroboticskgp'),('TeamKART','TeamKART'),('Debating Society','kgpdebsoc')]
 	for_later = ['Cultural-IIT-Kharagpur']
 
 	data = get_aggregated_feed(news_pages)
