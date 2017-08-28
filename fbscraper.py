@@ -264,13 +264,20 @@ if __name__ == "__main__":
 	f=open("hist.txt","w")
 	f.write(str(random()))
 	news_pages = [('The Scholar\'s Avenue', 'scholarsavenue'),
-				  ('Awaaz IIT Kharagpur', 'awaaziitkgp'),
-				  ('Technology Students Gymkhana', 'TSG.IITKharagpur'),
-				  ('Technology IIT KGP', 'iitkgp.tech'),('Kharagpur Open Source Society','kossiitkgp'),
-				  ('Metakgp', 'metakgp'),('Kharagpur RoboSoccer Students\' Group','krssg'),
-				  ('Technology Robotix Society','robotixiitkgp'),('Swarm Robotics','swarmroboticskgp'),
-				  ('Kharagpur Data Analytics Group','kgpdag'), ('Autonomous Ground Vehicle','agvkgp'),
-				  ('Quadrotor','aerialroboticskgp'),('TeamKART','TeamKART'),('Debating Society','kgpdebsoc')]
+			('Awaaz IIT Kharagpur', 'awaaziitkgp'),
+			('Technology Students Gymkhana', 'TSG.IITKharagpur'),
+			('Technology IIT KGP', 'iitkgp.tech'),('Kharagpur Open Source Society','kossiitkgp'),
+			('Metakgp', 'metakgp'),('Kharagpur RoboSoccer Students\' Group','krssg'),
+			('Technology Robotix Society','robotixiitkgp'),('Swarm Robotics','swarmroboticskgp'),
+			('Kharagpur Data Analytics Group','kgpdag'), ('Autonomous Ground Vehicle','agvkgp'),
+			('Aerial Robotics Kharagpur','aerialroboticskgp'),('TeamKART','TeamKART'),('Debating Society','kgpdebsoc'),
+			('Technology Literary Society','tlsiitkgp'),('AIESEC','aieseciitkgp'),('Student Welfare Group','SWGIITKGP'),
+			('The KGPian Game Theory Society','The.KGTS'),('Electric Vehicle Group','EVPIITKGP'),('Business Club','bclubkgp'),
+			('Communiqué','communique.iitkgp'),('Technology Filmmaking & Photography Society','tfps.iitkgp'),
+			('Quiz Club','iitkgp.quizclub'),('Branding And Relations Cell','barciitkgp'),('Alumni Cell','iitkgp.alumnicell'),
+			('International Relations Cell','IRCIITKGP'),('Entrepreneurship Cell','ecell.iitkgp'),('Gopali Youth Welfare Society','gyws.iitkgp'),
+			('Kshitij','ktj.iitkgp'),('Spring Fest','springfest.iitkgp'),('CodeClub','CodeClub.IITKGP'),('ProDex','prodex.iitkgp'),
+			('Director IIT Kharagpur','director.iitkgp')]
 	for_later = ['Cultural-IIT-Kharagpur']
 
 	data = get_aggregated_feed(news_pages)
