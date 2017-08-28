@@ -278,7 +278,11 @@ if __name__ == "__main__":
 	write_html(data, 'docs/index.html')
 	tz = pytz.timezone('Asia/Kolkata')
 	now =  datetime.now(tz)
-	text = "Last updated: "+str(now.day)+"-"+str(now.month)+"-"+str(now.year)+", "+str(now.hour)+":"+str(now.minute)+" IST"
+	minutes = now.minute
+	if (len(str(minutes))==1):
+		text = "Last updated: "+str(now.day)+"-"+str(now.month)+"-"+str(now.year)+", "+str(now.hour)+":0"+str(minutes)+" IST"
+	else:
+		text = "Last updated: "+str(now.day)+"-"+str(now.month)+"-"+str(now.year)+", "+str(now.hour)+":"+str(minutes)+" IST"
 	fn=open("docs/index.html","r")
 	fo=open("docs/indext.html","w")
 	all_text = fn.read()
