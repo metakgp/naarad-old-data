@@ -13,8 +13,9 @@ commit_website_files() {
 
 upload_files() {
   git remote add origin-here https://${OUATH_KEY}@github.com/americast/naarad.git
-  git remote add origin-metakgp https://${OUATH_KEY}@github.com/metakgp/naarad.git
   git push --set-upstream origin-here master 
+  git remote add origin-metakgp https://${OUATH_KEY}@github.com/metakgp/naarad.git
+  git fetch --unshallow origin-here
   echo "naarad.metakgp.org" > docs/CNAME
   git add docs/CNAME
   git commit --amend --no-edit
