@@ -10,7 +10,9 @@ Maintainers : [Athitya Kumar](https://github.com/athityakumar) and [Ayush Goyal]
 
 Naarad gets the content from the specified pages using Facebook's graph API. We
 use [facepy](https://github.com/hargup/facepy) as the python frontend for the
-api.
+api. It is deployed at Travis CI where every build updates Naarad and  pushes a new 
+commit, which triggers Travis again.  
+Travis CI link: https://travis-ci.org/americast/naarad
 
 
 ## How to use Naarad
