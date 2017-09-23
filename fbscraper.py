@@ -273,9 +273,9 @@ if __name__ == "__main__":
 			('Aerial Robotics Kharagpur','aerialroboticskgp'),('TeamKART','TeamKART'),('Debating Society','kgpdebsoc'),
 			('Technology Literary Society','tlsiitkgp'),('AIESEC','aieseciitkgp'),('Student Welfare Group','SWGIITKGP'),
 			('The KGPian Game Theory Society','The.KGTS'),('Electric Vehicle Group','EVPIITKGP'),('Business Club','bclubkgp'),
-			('Communiqué','communique.iitkgp'),('Technology Filmmaking & Photography Society','tfps.iitkgp'),
+			('Communiqué','communique.iitkgp'),('International Relations Cell','IRCIITKGP'),
 			('Quiz Club','iitkgp.quizclub'),('Branding And Relations Cell','barciitkgp'),('Alumni Cell','iitkgp.alumnicell'),
-			('International Relations Cell','IRCIITKGP'),('Entrepreneurship Cell','ecell.iitkgp'),('Gopali Youth Welfare Society','gyws.iitkgp'),
+			('Entrepreneurship Cell','ecell.iitkgp'),('Gopali Youth Welfare Society','gyws.iitkgp'),
 			('Kshitij','ktj.iitkgp'),('Spring Fest','springfest.iitkgp'),('CodeClub','CodeClub.IITKGP'),('ProDex','prodex.iitkgp'),
 			('Director IIT Kharagpur','director.iitkgp')]
 	for_later = ['Cultural-IIT-Kharagpur']
