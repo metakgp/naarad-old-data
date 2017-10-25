@@ -94,16 +94,18 @@ Veunu: {}
 	for event in all_events['data']:
 		if event['id'] in post_id:
 			DateTime = prettify_date([{'created_time': event['start_time']}])
-			if 'description' in event.keys():  # checking if the event have description
-				message = message.format(event['description'],
-										 DateTime[0]['real_time'],
-										 DateTime[0]['real_date'],
-										 event['place']['name'])
-			else:
-				message = message.format(event['name'],
-										 DateTime[0]['real_time'],
-										 DateTime[0]['real_date'],
-										 event['place']['name'])
+			try:
+				if 'description' in event.keys():  # checking if the event have description
+					message = message.format(event['description'],
+											 DateTime[0]['real_time'],
+											 DateTime[0]['real_date'],
+											 event['place']['name'])
+				else:
+					message = message.format(event['name'],
+											 DateTime[0]['real_time'],
+											 DateTime[0]['real_date'],
+											 event['place']['name'])
+			except: pass
 			return message
 
 
