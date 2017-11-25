@@ -22,7 +22,7 @@ rsa==3.4.2
 SecretStorage==2.3.1
 simplejson==3.8.2
 six==1.10.0
-tz==0.2.2
+#tz
 uritemplate==0.6
 urllib2-file==0.2.1
 urllib2-prior-auth==0.2.0
