@@ -1,4 +1,3 @@
-group: deprecated-2017Q3
 sudo : required
 dist: xenial
 language:
@@ -6,14 +5,17 @@ language:
   - python
 rvm:
   -  2.2.5
+python:
+  - "3.4"
 before_install:
-  - sudo apt-get install python3-pip
+  # - sudo apt-get install python3-pip
   - sudo apt-get install pandoc
   - gem install asciidoctor
+  - pip --version
 install: 
   # - gem install html-proofer
-  - pip3 install requests
-  - pip3 install  -r req.txt
+  - pip install requests
+  - pip install  -r req.txt
   # - sudo apt install cloc
 script:
   # - ruby proofer.rb
