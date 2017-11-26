@@ -10,13 +10,12 @@ python:
 before_install:
   # - sudo apt-get install python3-pip
   - (sudo killall apt-get && sudo killall apt) || echo "Nothing to kill"
-  - sudo apt-get install pandoc
-  - sudo apt install pandoc
+  - sudo apt-get install pandoc || sudo apt install pandoc
   - gem install asciidoctor
 install: 
   # - gem install html-proofer
-  - sudo apt install python3-dateutil
-  - sudo apt install python3-pip
+  - sudo apt install python3-dateutil || sudo apt-get install python3-dateutil
+  - sudo apt install python3-pip || sudo apt-get install python3-pip
   - python3 -m pip install python-dateutil --user
   - python3 -m pip install requests --user
   - python3 -m pip install  -r req.txt --user
